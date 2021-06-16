@@ -7,6 +7,12 @@
         <li>
             <a href="{{route('index')}}"><i data-feather="home"></i>Home</a>
         </li>
+        <li>
+            <a href="{{route('form.index')}}"><i data-feather="clipboard"></i>Form</a>
+        </li>
+        <li>
+            <a href="{{route('form1.index')}}"><i data-feather="file"></i>Form 1</a>
+        </li>
 
         <li>
             <a href="{{route('admin.index')}}"><i data-feather="user"></i>Admin</a>

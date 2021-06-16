@@ -15,6 +15,8 @@ use Illuminate\Support\Facades\Route;
 
 Route::group(['middleware' => 'admin'], function () {
     Route::get('/', 'HomeController@index')->name('index');
+    Route::resource('/form', 'AllFormController');
+    Route::resource('/form1', 'Form1Controller');
     Route::resource('/admin', 'UserController');
     Route::get('/logout', 'AuthController@logout')->name('logout');
     Route::get('/setting', 'AuthController@setting')->name('setting');
