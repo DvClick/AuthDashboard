@@ -11,9 +11,12 @@
             <a href="{{route('form.index')}}"><i data-feather="clipboard"></i>Form</a>
         </li>
         <li>
-            <a href="{{route('form1.index')}}"><i data-feather="file"></i>Form 1</a>
+            <a href="index.html"><i data-feather="file"></i>Form 1<i class="fas fa-chevron-right dropdown-icon"></i></a>
+            <ul class="">
+                <li><a href="{{route('form1.index')}}"><i class="far fa-circle"></i>All Documents</a></li>
+                <li><a href="{{route('form1.create')}}"><i class="far fa-circle"></i>Add New Documrnt</a></li>
+            </ul>
         </li>
-
         <li>
             <a href="{{route('admin.index')}}"><i data-feather="user"></i>Admin</a>
         </li>

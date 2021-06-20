@@ -14,7 +14,8 @@ class Form1Controller extends Controller
      */
     public function index()
     {
-        return view('page.form1.index');
+
+        return view('page.form1.index')->with(['data' => form1::all()]);
     }
 
     /**
@@ -24,7 +25,7 @@ class Form1Controller extends Controller
      */
     public function create()
     {
-        //
+        return view('page.form1.insert');
     }
 
     /**
@@ -46,7 +47,7 @@ class Form1Controller extends Controller
      */
     public function show(form1 $form1)
     {
-        //
+        return view('page.form1.show');
     }
 
     /**

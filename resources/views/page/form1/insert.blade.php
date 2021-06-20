@@ -19,6 +19,9 @@
         font-weight: normal;
     }
 </style>
+
+
+
 <div style="width: 7in;height: 9.25in;background-color: white">
     @include('components.header')
     <br>
@@ -26,23 +29,28 @@
         <table style="width: 100%" dir="rtl">
             <tbody>
                 <tr>
-                    <td style="width: 50%">العدد:</td>
-                    <td style="width: 50%">التاريخ:</td>
+                    <td style="width: 50%">العدد: <input type="number" name="" id=""></td>
+                    <td style="width: 50%">التاريخ: <input type="date" name="" id=""></td>
                 </tr>
                 <tr>
-                    <td style="width: 50%">القسم/ الشعبة/ </td>
+                    <td style="width: 50%">القسم/ الشعبة/ <select name="cars" id="cars">
+                            <option value="ئیدارە">القسم ئیدارە</option>
+                            <option value="سیرات">القسم سیرات</option>
+                            <option value="حسابات">القسم حسابات</option>
+                        </select></td>
                     <td style="width: 50%"></td>
                 </tr>
                 <tr>
-                    <td style="width: 50%">السيد منسق النظام الإدارة المتكامل نقترح(تعديل ) الوثيقة:</td>
+                    <td style="width: 50%">السيد منسق النظام الإدارة المتكامل نقترح(تعديل ) الوثيقة: <input type="file"
+                            name="" id=""></td>
                     <td style="width: 50%"></td>
                 </tr>
                 <tr>
-                    <td style="width: 50%">أسم الوثيقة: </td>
+                    <td style="width: 50%">أسم الوثيقة: <input type="name" name="" id=""> </td>
                     <td style="width: 50%"></td>
                 </tr>
                 <tr>
-                    <td style="width: 50%">رمز الوثيقة : </td>
+                    <td style="width: 50%">رمز الوثيقة : <input type="name" name="" id=""></td>
                     <td style="width: 50%"></td>
                 </tr>
             </tbody>
@@ -58,9 +66,9 @@
                     </tr>
                 </thead>
                 <tr class="trbody">
-                    <td class="tdbody">&nbsp;</td>
-                    <td class="tdbody">&nbsp;</td>
-                    <td class="tdbody">&nbsp;</td>
+                    <td class="tdbody"><input type="text" name="" id=""></td>
+                    <td class="tdbody"><input type="text" name="" id=""></td>
+                    <td class="tdbody"><input type="text" name="" id=""></td>
                 </tr>
             </tbody>
         </table>
@@ -87,18 +95,18 @@
 
                 <tr class="trbody">
 
-                    <td class="tdbody">&nbsp;</td>
-                    <td class="tdbody">&nbsp;</td>
-                    <td class="tdbody">&nbsp;</td>
-                    <td class="tdbody">&nbsp;</td>
+                    <td class="tdbody"><input type="text" name="" id="" style="max-width: 100px"></td>
+                    <td class="tdbody"><input type="text" name="" id="" style="max-width: 100px"></td>
+                    <td class="tdbody"><input type="text" name="" id="" style="max-width: 100px"></td>
+                    <td class="tdbody"><input type="text" name="" id="" style="max-width: 100px"></td>
                     <td class="tdbody">1</td>
                 </tr>
                 <tr class="trbody">
 
-                    <td class="tdbody">&nbsp;</td>
-                    <td class="tdbody">&nbsp;</td>
-                    <td class="tdbody">&nbsp;</td>
-                    <td class="tdbody">&nbsp;</td>
+                    <td class="tdbody"><input type="text" name="" id="" style="max-width: 100px"></td>
+                    <td class="tdbody"><input type="text" name="" id="" style="max-width: 100px"></td>
+                    <td class="tdbody"><input type="text" name="" id="" style="max-width: 100px"></td>
+                    <td class="tdbody"><input type="text" name="" id="" style="max-width: 100px"></td>
                     <td class="tdbody">2</td>
                 </tr>
             </tbody>
@@ -133,8 +141,7 @@
                     <td style="width: 50%;text-align: left">:Proposed action</td>
                 </tr>
                 <tr>
-                    <td style="width: 50%;text-align: right"><br><br><br><br></td>
-                    <td style="width: 50%;text-align: left"><br><br><br><br></td>
+                    <td colspan="2"><textarea name="" id="" style="width: 100%" rows="3"></textarea></td>
                 </tr>
             </tbody>
         </table>
@@ -152,5 +159,11 @@
     </div>
 
 </div>
+<br>
+<div class="card" style="width: 7in !important">
+    <div class="card-body">
 
+        <button class="btn btn-primary" style="float: right" type="submit">Add</button>
+    </div>
+</div>
 @endsection
