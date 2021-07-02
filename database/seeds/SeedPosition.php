@@ -14,10 +14,10 @@ class SeedPosition extends Seeder
     {
         Position::insert([
             [
-                'position' => 'HR',
+                'position' => 'امین مغزن',
                 'route' => '["Accountant","HR","System Admin"]',
             ],  [
-                'position' => 'Accountant',
+                'position' => 'تایید مدیر قیسم الحسابات',
                 'route' => '["Accountant","HR","System Admin"]',
 
             ],  [

@@ -14,15 +14,18 @@ class SeedAdmin extends Seeder
     {
         Admin::insert([
             [
+                'name' => 'توانا',
                 'username' => 'admin',
                 'password' => '$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2.uheWG/igi', // password
                 'p_id' => 3
             ],  [
-                'username' => 'shazad',
+                'name' => 'محمد',
+                'username' => 'mhamad',
                 'password' => '$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2.uheWG/igi', // password
                 'p_id' => 1
             ],  [
-                'username' => 'bahez',
+                'name' => 'دانەر',
+                'username' => 'danar',
                 'password' => '$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2.uheWG/igi', // password
                 'p_id' => 2
             ]

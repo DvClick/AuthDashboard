@@ -25,7 +25,9 @@ class AuthController extends Controller
         $data = Admin::where('username', $request->username)->first();
         if (Hash::check($request->password, $data->password)) {
             session()->put('id', $data->id);
+            session()->put('positions', $data->p_id);
             session()->put('username', $data->username);
+            session()->put('name', $data->name);
             return redirect()->route('index');
         } else {
             return redirect()->back()->withInput($request->input())->withErrors(['password' => 'Incorrect password']);
@@ -42,7 +44,9 @@ class AuthController extends Controller
             $data->username = $request->username;
             $data->save();
             session()->put('id', $data->id);
+            session()->put('positions', $data->p_id);
             session()->put('username', $data->username);
+            session()->put('name', $data->name);
             return  back()->withSuccess('Username updated');
         } else {
             return redirect()->back()->withErrors('Incorrect password');
@@ -60,7 +64,9 @@ class AuthController extends Controller
                 $data->password = Hash::make($request->password);
                 $data->save();
                 session()->put('id', $data->id);
+                session()->put('positions', $data->p_id);
                 session()->put('username', $data->username);
+                session()->put('name', $data->name);
                 return  back()->withSuccess('Password updated');
             } else {
                 return redirect()->back()->withErrors('Incorrect password');

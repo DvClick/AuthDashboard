@@ -4,7 +4,7 @@ namespace App;
 
 use Illuminate\Database\Eloquent\Model;
 
-class AllForm extends Model
+class Department extends Model
 {
     //
 }

@@ -13,7 +13,7 @@ class DatabaseSeeder extends Seeder
     {
         $this->call(SeedPosition::class);
         $this->call(SeedAdmin::class);
-        $this->call(SeedForm::class);
-        // $this->call(UserSeeder::class);
+        $this->call(SeedDepartment::class);
+        $this->call(SeedCity::class);
     }
 }

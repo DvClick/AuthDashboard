@@ -46,6 +46,8 @@ class RouteServiceProvider extends ServiceProvider
 
         $this->mapWebRoutes();
 
+        $this->mapDocumentRoutes();
+
         //
     }
 
@@ -76,5 +78,12 @@ class RouteServiceProvider extends ServiceProvider
             ->middleware('api')
             ->namespace($this->namespace)
             ->group(base_path('routes/api.php'));
+    }
+    protected function mapDocumentRoutes()
+    {
+        Route::prefix('form')
+            ->middleware('web')
+            ->namespace($this->namespace . '\Documents')
+            ->group(base_path('routes/documents.php'));
     }
 }

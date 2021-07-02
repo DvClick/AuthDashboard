@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateAllFormsTable extends Migration
+class CreateDepartmentsTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,11 +13,9 @@ class CreateAllFormsTable extends Migration
      */
     public function up()
     {
-        Schema::create('all_forms', function (Blueprint $table) {
+        Schema::create('departments', function (Blueprint $table) {
             $table->id();
-            $table->string('number')->unique();
-            $table->string('code')->unique();
-            $table->string('description');
+            $table->string('title');
             $table->timestamps();
         });
     }
@@ -29,6 +27,6 @@ class CreateAllFormsTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('all_forms');
+        Schema::dropIfExists('departments');
     }
 }

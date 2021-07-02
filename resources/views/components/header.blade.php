@@ -14,7 +14,7 @@
             </td>
             <td class="tdHeader" colspan="2" rowspan="2">
                 <center>
-                    <p><strong>إجـراء ضبط المعلومات الموثقة</strong><br>أستمارة طلب اصدار، إلغاء ، تعديل</p>
+                    <p>{{$name}}</p>
                 </center>
             </td>
             <td class="tdHeader">
@@ -37,7 +37,7 @@
         <tr class="trHeader">
             <td class="tdHeader">&nbsp;</td>
             <td class="tdHeader" colspan="2">
-                <center>(IMS -01-F02)</center>
+                <center>{{$code}}</center>
             </td>
             <td class="tdHeader">&nbsp;</td>
 
